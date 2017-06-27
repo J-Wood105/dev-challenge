@@ -109,7 +109,7 @@ section {
     display: inline-block;
     padding: 2px 10px;
     border-right: 2px solid #4a4a4a; }
-    @media only screen and (min-width: 320px) {
+    @media only screen and (max-width: 320px) {
       .menu a {
         font-size: 1em; } }
   .menu a:last-child {
@@ -165,7 +165,7 @@ section {
       background-size: cover; }
       #hero h1 {
         font-size: 6em; } }
-    @media only screen and (min-width: 320px) and (max-width: 480px) and (min-width: 320px) {
+    @media only screen and (min-width: 320px) and (max-width: 480px) and (max-width: 320px) {
       #hero h1 {
         font-size: 5em; } }
   @media only screen and (min-width: 320px) and (max-width: 480px) {
@@ -200,11 +200,7 @@ section {
   .ctas #hero-how-btn {
     background: none;
     border: 2px solid #4a4a4a; }
-  @media only screen and (min-device-width: 320px) {
-    .ctas {
-      height: 180px;
-      padding-bottom: 20px; } }
-  @media only screen and (min-device-width: 768px) {
+  @media only screen and (max-width: 768px) {
     .ctas {
       -webkit-flex-direction: row;
       -moz-flex-direction: row;
@@ -215,7 +211,15 @@ section {
       -ms-justify-content: space-around;
       justify-content: space-around;
       -ms-flex-pack: space-around;
+      -webkit-flex-wrap: wrap;
+      -moz-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
       width: 90%; } }
+  @media only screen and (max-width: 320px) {
+    .ctas {
+      height: 180px;
+      padding-bottom: 20px; } }
 
 #pickup-delivery {
   height: 820px;
@@ -255,13 +259,13 @@ section {
     @media screen and (min-width: 320px) and (max-width: 480px) {
       #pickup-delivery .ctas {
         padding-bottom: 10px; } }
-  @media only screen and (min-device-width: 768px) {
+  @media only screen and (max-width: 768px) {
     #pickup-delivery {
       height: auto; } }
   @media screen and (min-width: 320px) and (max-width: 480px) {
     #pickup-delivery {
       height: auto; } }
-  @media only screen and (min-width: 320px) {
+  @media only screen and (max-width: 320px) {
     #pickup-delivery h1 {
       font-size: 2.5em; } }
 
@@ -301,7 +305,7 @@ section {
     text-align: center; }
     #PD-icon-container p a {
       color: #000000; }
-    @media only screen and (min-width: 320px) {
+    @media only screen and (max-width: 320px) {
       #PD-icon-container p {
         padding: 0 20px; } }
   @media screen and (min-width: 310px) and (max-width: 480px) {
@@ -348,13 +352,13 @@ section {
     @media screen and (min-width: 320px) and (max-width: 480px) {
       #services .ctas {
         padding-bottom: 10px; } }
-  @media only screen and (min-device-width: 768px) {
+  @media only screen and (max-width: 768px) {
     #services {
       height: auto; } }
   @media screen and (min-width: 320px) and (max-width: 480px) {
     #services {
       height: auto; } }
-  @media only screen and (min-width: 320px) {
+  @media only screen and (max-width: 320px) {
     #services h1 {
       font-size: 2.5em; } }
 
@@ -387,7 +391,7 @@ section {
     #service-container {
       height: auto;
       padding: 20px; } }
-  @media only screen and (min-device-width: 768px) {
+  @media only screen and (max-width: 768px) {
     #service-container {
       height: auto; } }
 
@@ -436,7 +440,7 @@ section {
     text-align: left; }
     .service p a {
       color: #000000; }
-  @media only screen and (min-device-width: 768px) {
+  @media only screen and (max-width: 768px) {
     .service h3 {
       text-align: center; }
     .service div {
@@ -456,7 +460,7 @@ section {
       .service p {
         width: 100%;
         text-align: center; } }
-    @media only screen and (min-width: 320px) and (max-width: 480px) and (min-width: 320px) {
+    @media only screen and (min-width: 320px) and (max-width: 480px) and (max-width: 320px) {
       .service p {
         width: auto;
         padding: 0 20px; } }
@@ -466,42 +470,42 @@ section {
 
 #dry-cleaning p {
   width: 280px; }
-@media only screen and (min-device-width: 768px) {
+@media only screen and (max-width: 768px) {
   #dry-cleaning p {
     width: 100%;
     text-align: center; } }
 @media screen and (min-width: 320px) and (max-width: 480px) {
   #dry-cleaning p {
     width: 100%; } }
-  @media only screen and (min-width: 320px) and (max-width: 480px) and (min-width: 320px) {
+  @media only screen and (min-width: 320px) and (max-width: 480px) and (max-width: 320px) {
     #dry-cleaning p {
       width: auto;
       padding: 0 20px; } }
 
 #wash-fold p {
   width: 288px; }
-@media only screen and (min-device-width: 768px) {
+@media only screen and (max-width: 768px) {
   #wash-fold p {
     width: 100%;
     text-align: center; } }
 @media screen and (min-width: 320px) and (max-width: 480px) {
   #wash-fold p {
     width: 100%; } }
-  @media only screen and (min-width: 320px) and (max-width: 480px) and (min-width: 320px) {
+  @media only screen and (min-width: 320px) and (max-width: 480px) and (max-width: 320px) {
     #wash-fold p {
       width: auto;
       padding: 0 20px; } }
 
 #household p {
   width: 313px; }
-@media only screen and (min-device-width: 768px) {
+@media only screen and (max-width: 768px) {
   #household p {
     width: 100%;
     text-align: center; } }
 @media screen and (min-width: 320px) and (max-width: 480px) {
   #household p {
     width: 100%; } }
-  @media only screen and (min-width: 320px) and (max-width: 480px) and (min-width: 320px) {
+  @media only screen and (min-width: 320px) and (max-width: 480px) and (max-width: 320px) {
     #household p {
       width: auto;
       padding: 0 20px; } }
@@ -541,11 +545,11 @@ section {
       height: auto; }
       #app h1 {
         font-size: 3em; } }
-    @media only screen and (min-width: 320px) and (max-width: 480px) and (min-width: 320px) {
+    @media only screen and (min-width: 320px) and (max-width: 480px) and (max-width: 320px) {
       #app h1 {
         font-size: 2.5em; } }
 
-  @media only screen and (min-device-width: 768px) {
+  @media only screen and (max-width: 768px) {
     #app {
       height: auto; } }
 
@@ -573,7 +577,7 @@ section {
   -moz-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap; }
-  @media only screen and (min-device-width: 768px) {
+  @media only screen and (max-width: 768px) {
     #app-container div {
       padding: 20px; } }
 
@@ -629,7 +633,7 @@ section {
     #iphone {
       width: 100%;
       margin: 20px; } }
-  @media only screen and (min-width: 320px) and (max-width: 480px) and (min-width: 320px) {
+  @media only screen and (min-width: 320px) and (max-width: 480px) and (max-width: 320px) {
     #iphone {
       margin: 20px 0; }
       #iphone img {
@@ -666,7 +670,7 @@ section {
     border: 0;
     height: 2px;
     background-color: #ffffff; }
-  @media only screen and (min-device-width: 768px) {
+  @media only screen and (max-width: 768px) {
     #service-area {
       height: auto; }
       #service-area div:first-child {
@@ -676,7 +680,7 @@ section {
       height: auto; }
       #service-area div:first-child {
         padding-bottom: 20px; } }
-  @media only screen and (min-width: 320px) {
+  @media only screen and (max-width: 320px) {
     #service-area h1 {
       font-size: 2.5em; } }
 

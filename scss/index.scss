@@ -73,7 +73,7 @@ section {
 		display: inline-block;
 		padding: 2px 10px;
 		border-right: 2px solid #4a4a4a;
-		@media only screen and (min-width: 320px) {
+		@media only screen and (max-width: 320px) {
 			font-size: 1em;
 		}
 	}
@@ -122,7 +122,7 @@ section {
 		background-size: cover;
 		h1 {
 			font-size: 6em;
-			@media only screen and (min-width: 320px) {
+			@media only screen and (max-width: 320px) {
 				font-size: 5em;
 			}
 		}
@@ -152,15 +152,18 @@ section {
 		background: none;
 		border: 2px solid #4a4a4a;
 	}
-	@media only screen and (min-device-width: 320px) {
+  @media only screen and (max-width: 768px) {
+  	@include flex-direction(row);
+  	@include justify-content(space-around);
+    @include flex-wrap(wrap);
+  	width: 90%;
+  }
+
+	@media only screen and (max-width: 320px) {
 		height: 180px;
 		padding-bottom: 20px;
 	}
-	@media only screen and (min-device-width: 768px) {
-		@include flex-direction(row);
-		@include justify-content(space-around);
-		width: 90%;
-	}
+	
 }
 
 #pickup-delivery {
@@ -192,13 +195,13 @@ section {
 			padding-bottom: 10px;
 		}
 	}
-	@media only screen and (min-device-width: 768px) {
+	@media only screen  and (max-width : 768px) {
 		height: auto;
 	}
 	@media screen and (min-width: 320px) and (max-width: 480px) {
 		height: auto;
 	}
-	@media only screen and (min-width: 320px) {
+	@media only screen and (max-width: 320px) {
 		h1 {
 			font-size: 2.5em;
 		}
@@ -231,7 +234,7 @@ section {
 		a {
 			color: #000000;
 		}
-		@media only screen and (min-width: 320px) {
+		@media only screen and (max-width: 320px) {
 			padding: 0 20px;
 		}
 	}
@@ -271,13 +274,13 @@ section {
 			padding-bottom: 10px;
 		}
 	}
-	@media only screen and (min-device-width: 768px) {
+	@media only screen  and (max-width : 768px) {
 		height: auto;
 	}
 	@media screen and (min-width: 320px) and (max-width: 480px) {
 		height: auto;
 	}
-	@media only screen and (min-width: 320px) {
+	@media only screen and (max-width: 320px) {
 		h1 {
 			font-size: 2.5em;
 		}
@@ -296,7 +299,7 @@ section {
 		height: auto;
 		padding: 20px;
 	}
-	@media only screen and (min-device-width: 768px) {
+	@media only screen  and (max-width : 768px) {
 		height: auto;
 	}
 }
@@ -331,7 +334,7 @@ section {
 			color: #000000;
 		}
 	}
-  @media only screen and (min-device-width: 768px) {
+  @media only screen  and (max-width : 768px) {
     h3 {
       text-align:center;
     }
@@ -353,7 +356,7 @@ section {
 		p {
 			width: 100%;
 			text-align: center;
-			@media only screen and (min-width: 320px) {
+			@media only screen and (max-width: 320px) {
 				width: auto;
 				padding: 0 20px;
 			}
@@ -368,7 +371,7 @@ section {
 	p {
 		width: 280px;
 	}
-    @media only screen and (min-device-width: 768px) {
+    @media only screen  and (max-width : 768px) {
     	p {
         width: 100%;
         text-align: center;
@@ -378,7 +381,7 @@ section {
 	@media screen and (min-width: 320px) and (max-width: 480px) {
 		p {
 			width: 100%;
-			@media only screen and (min-width: 320px) {
+			@media only screen and (max-width: 320px) {
 				width: auto;
 				padding: 0 20px;
 			}
@@ -390,7 +393,7 @@ section {
 	p {
 		width: 288px;
 	}
-  @media only screen and (min-device-width: 768px) {
+  @media only screen  and (max-width : 768px) {
   	p {
   		width: 100%;
   		text-align: center;
@@ -400,7 +403,7 @@ section {
 	@media screen and (min-width: 320px) and (max-width: 480px) {
 		p {
 			width: 100%;
-			@media only screen and (min-width: 320px) {
+			@media only screen and (max-width: 320px) {
 				width: auto;
 				padding: 0 20px;
 			}
@@ -412,7 +415,7 @@ section {
 	p {
 		width: 313px;
 	}
-  @media only screen and (min-device-width: 768px) {
+  @media only screen  and (max-width : 768px) {
   	p {
   		width: 100%;
   		text-align: center;
@@ -422,7 +425,7 @@ section {
 	@media screen and (min-width: 320px) and (max-width: 480px) {
 		p {
 			width: 100%;
-			@media only screen and (min-width: 320px) {
+			@media only screen and (max-width: 320px) {
 				width: auto;
 				padding: 0 20px;
 			}
@@ -453,12 +456,12 @@ section {
 		height: auto;
 		h1 {
 			font-size: 3em;
-			@media only screen and (min-width: 320px) {
+			@media only screen and (max-width: 320px) {
 				font-size:2.5em;
 			}
 		}
 	}
-  @media only screen and (min-device-width: 768px) {
+  @media only screen  and (max-width : 768px) {
   	height: auto;
   }
 
@@ -471,7 +474,7 @@ section {
 	@include justify-content(center);
 	@include align-items(center);
 	@include flex-wrap(wrap);
-  @media only screen and (min-device-width: 768px) {
+  @media only screen  and (max-width : 768px) {
   	div {
       padding:20px;
     }
@@ -541,7 +544,7 @@ section {
 	@media screen and (min-width: 320px) and (max-width: 480px) {
 		width: 100%;
 		margin: 20px;
-		@media only screen and (min-width: 320px) {
+		@media only screen and (max-width: 320px) {
 			margin:20px 0;
 			img {
 				width: 92%;
@@ -569,7 +572,7 @@ section {
 		height: 2px;
 		background-color: #ffffff;
 	}
-  @media only screen and (min-device-width: 768px) {
+  @media only screen  and (max-width : 768px) {
   	height: auto;
     div:first-child {
       padding-bottom:20px;
@@ -582,7 +585,7 @@ section {
 			padding-bottom: 20px;
 		}
 	}
-	@media only screen and (min-width: 320px) {
+	@media only screen and (max-width: 320px) {
 		h1 {
 			font-size: 2.5em;
 		}
