@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>My Laundy Delivered</title>
+    <link rel="icon" type="image/png" href="<%= cleanerData.favicon %>">
+		<link rel="stylesheet" href="stylesheets/style.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+      crossorigin="anonymous"></script>
+	</head>
+
+	<body>
+      <div class="menu-container">
+        <div class="logo">
+          <a href="/">
+            <img src="<%= cleanerData.logo %>" alt="">
+          </a>
+        </div>
+        <div class="menu">
+        <% cleanerData.menuItems.forEach(function(item){ %>
+          <a href="<%= item.route %>"><%= item.item %></a>
+        <% }) %>
+        </div>
+      </div>

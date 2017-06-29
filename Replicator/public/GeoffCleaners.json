@@ -1,0 +1,43 @@
+{
+  "cleanerName": "Geoffs Cleaners",
+  "cleanerEmail": "geoffcleans@geoffscleaners.com",
+  "cleanerPhone": "555-555-555",
+  "cleanerLocation": "1501 18th St, Plano, TX 75074",
+  "logo": "/images/logo.png",
+  "favicon": "images/favicon.png",
+  "menuItems": [
+    {
+      "item": "Home",
+      "route": "/"
+    },
+    {
+      "item": "Services",
+      "route": "/services"
+    }
+  ],
+  "indexTitleText": "Relax We Got This!",
+  "indexSubtitleText": "Get your laundry and dry cleaning delivered right to your door.",
+  "services":[
+    {
+      "serviceName": "Dry Cleaning",
+      "serviceIcon": "/images/basket.png",
+      "servicesDescription": "Your cherished garments should only be trusted to a cleaner who understands quality."
+    },
+    {
+    	"serviceName": "Leater & Suede",
+    	"serviceIcon": "/images/basket.png",
+    	"servicesDescription": "Only an expert in leather and suede should be trusted with your valuable leather garments."
+
+    },
+    {
+    	"serviceName": "Wash & Fold Laundry",
+    	"serviceIcon": "/images/basket.png",
+    	"servicesDescription": "Let us handle this thankless task for you, and take back your free time!"
+    },
+    {
+    	"serviceName": "Household Items",
+    	"serviceIcon": "/images/basket.png",
+    	"servicesDescription": "Tablecloths, comforters, rugs, pillows, and curtains."
+    }
+  ]
+}

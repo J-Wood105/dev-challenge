@@ -1,0 +1,21 @@
+<% include includes/header %>
+<section id="services-page">
+  <div>
+    <h1>Services</h1>
+    <hr>
+  </div>
+  <div id="service-container">
+    <%  cleanerData.services.forEach(function(serv){ %>
+      <div class="service" id="<%= serv.serviceName %>">
+        <img src="<%= serv.serviceIcon %>" alt="">
+        <div>
+          <h3><%= serv.serviceName %></h3>
+          <p>
+            <%= serv.servicesDescription %>
+          </p>
+        </div>
+      </div>
+    <% }); %>
+  </div>
+</section>
+<% include includes/footer %>
