@@ -38,6 +38,22 @@ Tips:
 
 Push this part of the challenge to github on a branch called `yourname-part2`. 
 
+Instructions To Install:
+
+After cloning the repository and switching to the JB-part2 branch, change directory into the `Replicator` directory.
+```
+cd Replicator/
+```
+Once in the Replicator directory run 
+```
+npm install
+```
+and then
+```
+npm start
+```
+The site should be running on `localhost:2018`
+
 
 ## Part 3: Stretch Challenge (Optional!)
 
